@@ -1,0 +1,8 @@
+**/*.spec.js
+**/spec/**
+
+#functional tests
+
+
+app/common/commonHelper.js
+app/common/Blowfish.js

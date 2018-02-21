@@ -1,0 +1,35 @@
+- request:
+    url: ^/simple/resource/person$
+    method: POST
+    post: >
+          (.*(11111111|22222222).*)
+  response:
+    headers:
+         content-type: application/json
+    status: 200
+    latency: 3000
+    file: ./to-be-saved.json
+
+- request:
+    url: ^/simple/resource/person$
+    method: POST
+    post: >
+          (.*(33333333|44444444).*)
+  response:
+    headers:
+         content-type: application/json
+    status: 200
+    latency: 3000
+    file: ./to-not-be-saved.json    
+
+- request:
+    url: ^/simple/resource/person$
+    method: POST
+    post: >
+          (.*(55555555).*)
+  response:
+    headers:
+         content-type: application/json
+    status: 500
+    latency: 3000
+    file: ./error.json   

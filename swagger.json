@@ -1,0 +1,40 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "simple-boilerplate",
+    "description": "This API allows to  verify a person"
+   },
+  "host": "",
+  "basePath": "/api/test/v1/",
+  "tags": [
+    {
+      "name": "simple-test",
+      "description": "",
+      "externalDocs":
+      {
+        "description": "",
+        "url": ""
+      }
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "securityDefinitions": {
+    "accessToken": {
+        "type": "apiKey",
+        "name": "x-access-token",
+        "in": "header"
+      }
+  },
+  "security": [
+    { "accessToken": [] }
+  ]
+}

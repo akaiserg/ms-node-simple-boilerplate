@@ -1,0 +1,8 @@
+module.exports = {
+  apiAccess: {
+    accessToken: 'p23t74PEX9S7gDe3Y4cqBnyET1X06',
+  },
+  timeOut: {
+    timeOutService: 90000,
+  }
+};

@@ -1,0 +1,31 @@
+{
+    "result":{
+       "name":"newcontainer",
+       "etag":"\"0x8D4FBA5B6318921\"",
+       "lastModified":"Thu, 14 Sep 2017 19:20:51 GMT",
+       "lease":{
+          "status":"unlocked",
+          "state":"available"
+       },
+       "requestId":"eae62661-001e-0131-1c94-2d317e000000",
+       "publicAccessLevel":null,
+       "created":false
+    },
+    "response":{
+       "isSuccessful":true,
+       "statusCode":200,
+       "body":"",
+       "headers":{
+          "transfer-encoding":"chunked",
+          "last-modified":"Thu, 14 Sep 2017 19:20:51 GMT",
+          "etag":"\"0x8D4FBA5B6318921\"",
+          "server":"Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+          "x-ms-request-id":"eae62661-001e-0131-1c94-2d317e000000",
+          "x-ms-version":"2017-04-17",
+          "x-ms-lease-status":"unlocked",
+          "x-ms-lease-state":"available",
+          "date":"Thu, 14 Sep 2017 20:06:19 GMT",
+          "connection":"close"
+       }
+    }
+ }

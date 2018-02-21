@@ -1,0 +1,31 @@
+{
+    "result":{
+       "container":"newcontainer",
+       "name":"myfilename",
+       "lastModified":"Thu, 14 Sep 2017 20:06:21 GMT",
+       "etag":"\"0x8D4FBAC11875AEA\"",
+       "requestId":"05a71a0c-001e-005e-3394-2ddfff000000",
+       "contentSettings":{
+          "contentMD5":"f9sKFSIUIplEeksxGQlpPA=="
+       }
+    },
+    "response":{
+       "isSuccessful":true,
+       "statusCode":201,
+       "body":"",
+       "headers":{
+          "transfer-encoding":"chunked",
+          "content-md5":"f9sKFSIUIplEeksxGQlpPA==",
+          "last-modified":"Thu, 14 Sep 2017 20:06:21 GMT",
+          "etag":"\"0x8D4FBAC11875AEA\"",
+          "server":"Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+          "x-ms-request-id":"05a71a0c-001e-005e-3394-2ddfff000000",
+          "x-ms-version":"2017-04-17",
+          "x-ms-request-server-encrypted":"false",
+          "date":"Thu, 14 Sep 2017 20:06:21 GMT",
+          "connection":"close"
+       },
+       "requestServerEncrypted":false
+    }
+ }
+
