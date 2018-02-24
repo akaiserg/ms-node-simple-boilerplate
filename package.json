@@ -18,7 +18,7 @@
     "zip-unit-test-report": "rm -R mochawesome-report; rm unit-test-report.zip; npm run unit-test-report;zip -r unit-test-report.zip mochawesome-report; rm -R  mochawesome-report",
     "coverage-report": "node node_modules/istanbul/lib/cli.js  cover node_modules/mocha/bin/_mocha app/**/*.spec.js -t 10000",
     "zip-coverage-report": "rm *coverage-report.zip; npm run coverage; zip -r coverage-report.zip coverage; rm -R coverage/",
-    "stub-external-id-verify": "node node_modules/stubby/bin/stubby -d stubs/backend.yaml -s 8080 -t 65535 -a 8880  -w ",
+    "stub-backend": "node node_modules/stubby/bin/stubby -d stubs/backend.yaml -s 8080 -t 8081 -a 8082  -w ",
     "iso-test": "./node_modules/.bin/cucumber.js spec/features/isolation",
     "iso-cucumber-report-json": "./node_modules/.bin/cucumber.js spec/features/isolation -f json:cucumber_report.json",
     "iso-cucumber-report-html": "node cucumber-report-generator.js",
@@ -37,7 +37,8 @@
     "helmet": "^3.8.1",
     "lodash": "4.17.4",
     "swagger-jsdoc": "^1.9.7",
-    "swagger-ui-express": "^2.0.7"
+    "swagger-ui-express": "^2.0.7",
+    "unirest": "^0.5.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",

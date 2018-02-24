@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 
 // swagger configuration
-swaggerDef.basePath = `${config.resources.baseResource}${config.resources.version}/`;
+swaggerDef.basePath = `${config.baseResource}${config.version}/`;
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(
   swaggerJSDoc({
     swaggerDefinition: swaggerDef,
@@ -39,12 +39,12 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(
   })));
 
 // health check MS
-app.get(`${config.resources.baseResource}${config.resources.version}health/`, (req, res) => {
+app.get(`${config.baseResource}${config.version}health/`, (req, res) => {
   res.send('fif-common-nodejs-boilerplate up and running');
 });
 
 
-app.use(`${config.resources.baseResource}${config.resources.version}verify_person`,
+app.use(`${config.baseResource}${config.version}verify_person`,
   [HeaderMiddleware, BodyMiddleware, TokenMiddleware, VerifyPersonRoute]);
 
 // handle  not found  uris

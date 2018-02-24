@@ -29,7 +29,7 @@ function normalizePort(val) {
 /**
  * Get port from environment and store in Express.
  */
-const port = normalizePort(process.env.PORT || config.config.port);
+const port = normalizePort(process.env.PORT || config.port);
 app.set('port', port);
 
 /**
